@@ -162,8 +162,8 @@ func (l *linkedList[T])insertAt(idx int, value T)bool {
 		return true
 	}
 
-	curr := l.head 
-	for _ = range idx - 1 {
+	curr := l.head
+	for range idx {
 		curr = curr.next
 	}
 
