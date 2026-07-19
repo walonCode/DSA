@@ -3,7 +3,7 @@ package main
 import "cmp"
 
 //run at logarithm time big O(logn)
-func binary_search[T cmp.Ordered](arr []T, item T) (int, int){
+func binarySearch[T cmp.Ordered](arr []T, item T) (int, int){
 	low := 0
 	step := 0 
 	high := len(arr) - 1
